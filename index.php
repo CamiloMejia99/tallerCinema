@@ -54,52 +54,68 @@
 			<center>
 				<div id="contenedor2"class="col-6">
 					<div class="card border-info" >
-						<div class="card-body" style="background-color:#C22323" >
-							<h2>INGRESE DATOS DE LA PELICULA:</h2>
-							<ul class="list-group list-group-light" align="center">
-								
-								<li class="list-group-item">
-									<button type="button" class="btn btn-success" onclick="opcion1()">OPCION 1</button>
-									<button type="button" class="btn btn-warning" onclick="opcion2()">OPCION 2</button>
-									<button type="button" class="btn btn-danger" onclick="opcion3()">OPCION 3</button>
-								</li>
+						
+							<div class="card-body" style="background-color:#C22323" >
+								<h2>INGRESE DATOS DE LA PELICULA:</h2>
+								<form action="./impresion.php" method="POST">
+									<ul class="list-group list-group-light" align="center">
+										
+										<li class="list-group-item">
+											 <a href="register.php"  class="btn btn-success"> Opcion 1 </a>
+											<button type="button" class="btn btn-warning" onclick="opcion2()">OPCION 2</button>
 
-								<li class="list-group-item">	
-									<div class="container">
-										<div class="row">
-											<div class="col-6">
-												<div class="col" for="campo1">
-													<input type="text" name="campo1" id="campo1" class="form-control" placeholder="Campo 1" aria-label="First name">
-												</div>
-											</div>
-											<div class="col-6">
-												<div class="col" for="campo2">
-													<input type="text" name="campo2" id="campo2" class="form-control" placeholder="Campo 2" aria-label="First name">
-												</div>
-											</div>
-										</div>
-									</div>							
-								</li>
+											
+												 <input class="btn btn-primary" type="submit" value="opcion 3">
+											
 
-								<li class="list-group-item">	
-									<div class="container">
-										<div class="row">
-											<div class="col-6">
-												<div class="col" for="campo3">
-													<input type="text" name="campo3" id="campo3" class="form-control" placeholder="Campo 3" aria-label="First name">
+										</li>
+
+										<li class="list-group-item">	
+											<div class="container">
+												<div class="row">
+													<div class="col-6">
+														<div class="col-6">
+														<div class="col" for="codigoP">
+															<input type="number" name="codigoP" id="codigoP" class="form-control" placeholder="codigo Pelicula" aria-label="First name" min= "1" max="10000000000">
+														</div>
+													</div>
+													</div>
+													<div class="col-6">
+														<div class="col" for="nombreP">
+															<input type="text" name="nombreP" id="nombreP" class="form-control" placeholder="Nombre" aria-label="First name">
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="col-6">
-												<div class="col" for="precio">
-													<input type="number" name="precio" id="precio" class="form-control" placeholder="Precio" aria-label="First name" min= "1" max="1000000000">
+											</div>							
+										</li>
+
+										<li class="list-group-item">	
+											<div class="container">
+												<div class="row">
+													<div class="col-6">
+														<div class="col" for="generoP">
+															<input type="text" name="generoP" id="generoP" class="form-control" placeholder="Genero" aria-label="First name">
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="col" for="precioP">
+															<input type="number" name="precioP" id="precioP" class="form-control" placeholder="Precio" aria-label="First name" min= "1" max="1000000000">
+														</div>
+													</div>
 												</div>
-											</div>
-										</div>
-									</div>							
-								</li>	
-								
-							</ul>
-						</div>
+											</div>							
+										</li>	
+
+										<li class="list-group-item">	
+											<div for="txt_resul">
+												<p id="txt_resul">Resultado:  </p>
+																												
+											</div>					
+										</li>	
+								</form>	
+								</ul>
+							</div>
+
 					</div>
 				</div>
 			</center>
