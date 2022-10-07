@@ -7,11 +7,10 @@ include 'estilos.php';
     $nombrePel = $_POST['nombreP'];
     $generoPel = $_POST['generoP'];
     $precioPel = $_POST['precioP'];
-
 ?>
 
 
-<h5 class="card-title">Resumen de su pedido</h5>
+<h5 class="card-title">Dato pelicula</h5>
 <p class="card-text">
     <strong>Codigo: </strong> <?php echo $codidoPel ?> <br>
     <strong>Nombre: </strong> <?php echo  $nombrePel ?> <br>
