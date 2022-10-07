@@ -52,35 +52,52 @@
 	<div id="contenedorp" class="container, col-12" ><!--inicio contenedor principal -->
 		<div class="row">
 			<center>
-				<div id="contenedor2"class="col-5">
+				<div id="contenedor2"class="col-6">
 					<div class="card border-info" >
 						<div class="card-body" style="background-color:#C22323" >
 							<h2>INGRESE DATOS DE LA PELICULA:</h2>
 							<ul class="list-group list-group-light" align="center">
 								
 								<li class="list-group-item">
-									<div for="txt_id"><b>Id:</b>
-										<input type="number" name="txt_id" id="txt_id"min= "1" max="1000000000">
-									</div>
+									<button type="button" class="btn btn-success" onclick="opcion1()">OPCION 1</button>
+									<button type="button" class="btn btn-warning" onclick="opcion2()">OPCION 2</button>
+									<button type="button" class="btn btn-danger" onclick="opcion3()">OPCION 3</button>
 								</li>
 
 								<li class="list-group-item">	
-									<div for="txt_nombre"><b>Nombre:</b>
-										<input  type="text" name="txt_nombre" id="txt_nombre" >
-									</div>
+									<div class="container">
+										<div class="row">
+											<div class="col-6">
+												<div class="col" for="campo1">
+													<input type="text" name="campo1" id="campo1" class="form-control" placeholder="Campo 1" aria-label="First name">
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="col" for="campo2">
+													<input type="text" name="campo2" id="campo2" class="form-control" placeholder="Campo 2" aria-label="First name">
+												</div>
+											</div>
+										</div>
+									</div>							
 								</li>
 
-								<li class="list-group-item">
-									<div for="txt_precio"><b>Precio:</b>
-										<input type="number" name="txt_precio" id="txt_precio"min= "1" max="1000000000">
-									</div>
-								</li>
-
-								<li class="list-group-item">
-									<button type="button" class="btn btn-info" onclick="opcion1()">OPCION 1</button>
-									<button type="button" class="btn btn-info" onclick="opcion2()">OPCION 2</button>
-									<button type="button" class="btn btn-info" onclick="opcion3()">OPCION 3</button>
-								</li>
+								<li class="list-group-item">	
+									<div class="container">
+										<div class="row">
+											<div class="col-6">
+												<div class="col" for="campo3">
+													<input type="text" name="campo3" id="campo3" class="form-control" placeholder="Campo 3" aria-label="First name">
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="col" for="precio">
+													<input type="number" name="precio" id="precio" class="form-control" placeholder="Precio" aria-label="First name" min= "1" max="1000000000">
+												</div>
+											</div>
+										</div>
+									</div>							
+								</li>	
+								
 							</ul>
 						</div>
 					</div>
